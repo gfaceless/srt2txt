@@ -1,15 +1,20 @@
 {
   "name": "srt2txt",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "split2": "^2.0.1"
+    "split2": "^2.0.1",
+    "yargs": "^5.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./index.js ./test.srt"
   },
+  "engines" : { "node" : ">=6.0.0" },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "s2t": "./index.js"
+  }
 }

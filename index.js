@@ -1,9 +1,13 @@
+#!/usr/bin/env node
+
 var fs = require("fs");
 
 var stream = require("stream");
 var split = require("split2");
 var Filter = require("./filter");
 
+var argv = require('yargs').argv;
+var filePath = argv._[0];
 
 
 function Converter(options) {
@@ -23,7 +27,7 @@ Converter.prototype.pipe = function(destination, options) {
 };
 
 
-
-fs.createReadStream('./1.srt')
+fs.createReadStream(filePath)
 	.pipe(Converter())
-	.pipe(fs.createWriteStream('./2.txt'));
+	.pipe(process.stdout);
+	// .pipe(fs.createWriteStream('./2.txt'));
