@@ -3,7 +3,7 @@ remove timestamps, concat sentences. Support only .srt files.
 
 # Install and use
 ```
-npm i -g srt2txt`
+npm i -g srt2txt
 s2t subtitle.srt > output.txt
 ```
 
