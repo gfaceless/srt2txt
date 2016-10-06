@@ -1,6 +1,6 @@
 {
   "name": "srt2txt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "convert subtitles (.srt) to raw text",
   "keywords": ["srt", "subtitle", "text", "convert" ],
   "homepage": "https://github.com/gfaceless/srt2txt",
